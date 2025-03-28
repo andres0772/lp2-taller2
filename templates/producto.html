@@ -1,8 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block titulo %} {{ producto.id }}: {{
+producto.nombre }} {% endblock %} {% block contenido %}
+<div class="producto-card">
+  <img
+    src="{{ url_for('static', filename='fotos/') }}{{producto.id}}.jpg"
+    alt="{{producto.nombre}}"
+  />
+  <div class="producto-info">
+    <h2>{{producto.categoria}} - {{producto.marca}}</h2>
+    <h1>{{producto.nombre}}</h1>
+    <h2>${{ "{:,}".format(producto.precio) }}</h2>
+  </div>
+</div>
 
-{% block titulo %}{{producto.id}}: {{producto.nombre}}{% endblock %}
-
-{% block contenido %}
-
-
+<div class="regresar-btn">
+  <button type="button">
+    <a href="{{ url_for('ruta_raiz') }}">Regresar</a>
+  </button>
+</div>
 {% endblock %}
