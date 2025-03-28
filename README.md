@@ -1,13 +1,14 @@
 # Lenguaje de Programación 2 - Taller 2
 
-![commits](https://badgen.net/github/commits/UR-CC/lp2-taller2?icon=github) 
-![last_commit](https://img.shields.io/github/last-commit/UR-CC/lp2-taller2)
+![commits](https://badgen.net/github/commits/UR-CC/lp2-taller1?icon=github) 
+![last_commit](https://img.shields.io/github/last-commit/UR-CC/lp2-taller1)
 
 - ver [badgen](https://badgen.net/) o [shields](https://shields.io/) para otros tipos de _badges_
 
 ## Autores
 
-- [andres esteban vasquez peña]https://github.com/andres0772/lp2-taller2.git
+- [andres esteban vasquez peña](https://github.com/andres0772/lp2-taller1.git)
+- [@estudiante2](https://www.github.com/estudiante2)
 
 ## Descripción del Proyecto
 
@@ -21,19 +22,20 @@ Morbi quam lectus, tempus sit amet mi non, facilisis dignissim erat. Aenean tort
 
 1. Clonar el proyecto
 ```bash
-git clone https://github.com/UR-CC/lp2-taller2.git
+git clone https://github.com/UR-CC/lp2-taller1.git
 ```
 
 2. Crear y activar entorno virtual
 ```bash
-cd lp2-taller2
+cd lp2-taller1
 python -m venv venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass #se pone este codigo antes del venv
 venv/bin/activate
 ```
 
 3. Instalar librerías y dependencias
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt #se pone .txt para que lo reconosca windows 
 ```
     
 ## Ejecución
@@ -42,7 +44,7 @@ Maecenas sed lorem at arcu varius mollis. Sed eleifend nulla ut blandit interdum
 
 1. Ejecutar el proyecto
 ```bash
-cd lp2-taller2
-python app.py
+cd lp2-taller1
+python main.py
 ```
 
